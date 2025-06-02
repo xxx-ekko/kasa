@@ -3,7 +3,7 @@ import Header from "./components/Header";
 import Banner from "./components/Banner";
 import Footer from "./components/Footer";
 import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
-import "./App.css";
+import "./App.scss";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 
