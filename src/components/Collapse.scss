@@ -1,0 +1,46 @@
+$kasa-primary-color: #FF6060;
+$text-color-on-primary: white; 
+$font-family-main: 'Montserrat', sans-serif;
+
+.collapse {
+  margin-bottom: 20px; 
+
+  .collapse-header {
+    background-color: $kasa-primary-color;
+    color: $text-color-on-primary;
+    padding: 10px 15px;
+    border-radius: 5px; 
+    cursor: pointer;
+
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+
+    .collapse-title {
+      font-family: $font-family-main;
+      font-size: 24px;
+      font-weight: 500; 
+      margin: 0; 
+    }
+
+    .collapse-icon {
+      font-size: 16px; 
+    }
+  }
+
+  .collapse-content {
+    background-color: #F6F6F6; 
+    color: $kasa-primary-color; 
+    padding: 20px 15px; 
+    border-radius: 0 0 5px 5px;
+
+
+    p, li {
+      font-family: $font-family-main;
+      font-size: 18px; 
+      font-weight: 400; 
+      margin: 0;
+      line-height: 1.5; 
+    }
+  }
+}

@@ -1,14 +1,16 @@
 import Banner from "../../components/Banner";
-//import Footer from "../../components/Footer";
-//import Header from "../../components/Header";
 import LocationCard from "../../components/LocationCard.jsx";
 import logements from "../../data/logements.json";
 import "./Home.scss";
 
+import homeBannerImage from "../../assets/banner_img.png";
+//const homeBannerImage = "../../../../assets/banner_img.png";
+const homeBannerTitle = "Chez vous, partout et ailleurs";
+
 export default function Home() {
   return (
     <div>
-      <Banner></Banner>
+      <Banner imageUrl={homeBannerImage} title={homeBannerTitle} />
       <section className="locations-grid">
         {logements.map((logement) => (
           <LocationCard
