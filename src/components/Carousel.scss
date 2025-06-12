@@ -1,0 +1,76 @@
+$carousel-height-desktop: 415px; 
+$carousel-height-mobile: 255px;  
+$arrow-font-size-desktop: 76px; 
+$arrow-font-size-mobile: 24px;  
+
+.carousel {
+  height: $carousel-height-desktop;
+  position: relative; 
+  width: 100%;
+}
+
+.carousel-slide {
+  width: 100%;
+  height: 100%; 
+  border-radius: 25px; 
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+}
+
+.carousel-arrow {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%); 
+  cursor: pointer;
+  color: white;
+  font-size: $arrow-font-size-desktop;
+  font-weight: bold;
+  user-select: none; 
+
+  &.left-arrow {
+    left: 25px; 
+  }
+
+  &.right-arrow {
+    right: 25px; 
+  }
+}
+
+.carousel-counter {
+  position: absolute;
+  bottom: 25px; 
+  left: 50%; 
+  transform: translateX(-50%); 
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif; 
+  font-weight: 500;
+}
+
+// --- Responsive pour mobile ---
+@media (max-width: 767px) {
+  .carousel {
+    height: $carousel-height-mobile; 
+  }
+
+  .carousel-slide {
+    border-radius: 10px; 
+  }
+
+  .carousel-arrow {
+    font-size: $arrow-font-size-mobile;
+
+    &.left-arrow {
+      left: 10px;
+    }
+
+    &.right-arrow {
+      right: 10px;
+    }
+  }
+
+  .carousel-counter {
+    display: none;
+  }
+}

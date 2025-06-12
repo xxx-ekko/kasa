@@ -18,7 +18,15 @@ function Collapse({ title, content }) {
       </div>
       {isOpen && (
         <div className="collapse-content">
-          {typeof content === "string" ? <p>{content}</p> : content}
+          {Array.isArray(content) ? (
+            <ul className="equipments-list">
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            <p>{content}</p>
+          )}
         </div>
       )}
     </div>

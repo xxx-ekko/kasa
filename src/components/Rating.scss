@@ -1,0 +1,21 @@
+.rating {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+
+  .rating-star {
+    width: 30px; 
+    height: 30px;
+  }
+}
+
+// --- Responsive pour mobile ---
+@media (max-width: 767px) {
+  .rating {
+    gap: 6px;
+    .rating-star {
+      width: 15px;
+      height: 15px;
+    }
+  }
+}

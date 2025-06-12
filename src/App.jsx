@@ -6,6 +6,8 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router";
 import "./App.scss";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
+import LocationPage from "./pages/LocationPage/LocationPage.jsx";
+import ErrorPage from "./pages/ErrorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +15,9 @@ const router = createBrowserRouter([
     element: (
       <>
         <Header />
-        <Outlet />
+        <main className="main-content-container">
+          <Outlet />
+        </main>
         <Footer />
       </>
     ),
@@ -25,6 +29,14 @@ const router = createBrowserRouter([
       {
         path: "about",
         element: <About />,
+      },
+      {
+        path: "location/:id",
+        element: <LocationPage />,
+      },
+      {
+        path: "*",
+        element: <ErrorPage />,
       },
     ],
   },

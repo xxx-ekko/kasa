@@ -1,0 +1,31 @@
+$kasa-primary-color: #FF6060;
+$font-family-main: 'Montserrat', sans-serif;
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap; 
+  gap: 10px; 
+}
+
+.tag-item {
+  background-color: $kasa-primary-color;
+  color: white;
+  border-radius: 10px;
+  padding: 3px 25px; 
+  font-family: $font-family-main;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  min-width: 115px; 
+  margin-bottom: 20px;
+}
+
+// --- Responsive pour mobile ---
+@media (max-width: 767px) {
+  .tag-item {
+    font-size: 10px;
+    min-width: 84px;
+    border-radius: 5px;
+    padding: 2px 20px;
+  }
+}

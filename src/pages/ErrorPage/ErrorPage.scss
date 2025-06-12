@@ -1,0 +1,56 @@
+$kasa-primary-color: #FF6060;
+$font-family-main: 'Montserrat', sans-serif;
+
+.error-page {
+  color: $kasa-primary-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: calc(100vh - 200px);
+
+  .error-number {
+    font-family: $font-family-main;
+    font-weight: 700; 
+    font-size: 288px; 
+    margin: 0;
+  }
+
+  .error-message {
+    font-family: $font-family-main;
+    font-weight: 500;
+    font-size: 36px;
+    margin-top: 10px;
+    margin-bottom: 140px; 
+  }
+
+  .error-link-home {
+    font-family: $font-family-main;
+    font-weight: 500;
+    font-size: 18px;
+    color: $kasa-primary-color;
+    text-decoration: underline;
+
+  }
+}
+
+// --- Responsive ---
+@media (max-width: 767px) {
+  .error-page {
+    .error-number {
+      font-size: 96px; 
+    }
+
+    .error-message {
+      font-size: 18px;
+      margin-top: 10px;
+      margin-bottom: 100px;
+      max-width: 260px; 
+    }
+
+    .error-link-home {
+      font-size: 14px;
+    }
+  }
+}

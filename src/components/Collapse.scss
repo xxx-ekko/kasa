@@ -34,6 +34,12 @@ $font-family-main: 'Montserrat', sans-serif;
     padding: 20px 15px; 
     border-radius: 0 0 5px 5px;
 
+  .equipments-list {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+  }
+
 
     p, li {
       font-family: $font-family-main;
