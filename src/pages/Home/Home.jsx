@@ -4,7 +4,6 @@ import logements from "../../data/logements.json";
 import "./Home.scss";
 
 import homeBannerImage from "../../assets/banner_img.png";
-//const homeBannerImage = "../../../../assets/banner_img.png";
 const homeBannerTitle = "Chez vous, partout et ailleurs";
 
 export default function Home() {

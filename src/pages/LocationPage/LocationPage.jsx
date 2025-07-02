@@ -23,6 +23,9 @@ export default function LogementPage() {
       console.error("Logement non trouvé!");
     }
   }, [id, navigate]);
+  if (!logement) {
+    return null;
+  }
 
   return (
     <div className="logement-page">
